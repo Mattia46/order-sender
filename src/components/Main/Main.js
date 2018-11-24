@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import Login from '../Login/Login';
-import img from '../../../assets/logo.png';
+import Footer from '../Footer/Footer';
+import logo from '../../../assets/logo.png';
 
 class Main extends Component {
     render() {
         return (
-            <div>
-                <img src={img} alt="logo" className="logo" />
+            <div className="container">
+                <img src={logo} alt="logo" className="logo" />
                 <Login />
+                <Footer />
             </div>
         );
     }

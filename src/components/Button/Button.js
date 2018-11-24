@@ -5,12 +5,15 @@ const Button = data => {
         handler,
         text = 'ciao',
     } = data;
-    return <button
-        onClick={data.handler}
-        type="button"
-    >
-        {data.text}
-    </button>;
+    return (
+        <button
+            className="button"
+            onClick={data.handler}
+            type="button"
+        >
+            {data.text}
+        </button>
+    );
 };
 
 export default Button;
