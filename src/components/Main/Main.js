@@ -4,6 +4,15 @@ import Footer from '../Footer/Footer';
 import logo from '../../../assets/logo.png';
 
 class Main extends Component {
+    componentWillMount() {
+        const user = window.localStorage.getItem('user');
+        if ('user') {
+            console.log('user is: ', user);
+        } else {
+            console.log('no use: ');
+        }
+    }
+
     render() {
         return (
             <div className="container">
